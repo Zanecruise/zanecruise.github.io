@@ -2,27 +2,78 @@ console.log("Linkado")
 
 window.onload = (event) => {
 
-    console.log('ABRIU');
+    function time() {
+        today = new Date();
+        h = today.getHours();
+        m = today.getMinutes();
+        s = today.getSeconds();
 
-    function clock(){
+        if(h < 10){
+            h = "0" + h
+        }
+        if(m < 10){
+            m = "0" + m
+        }
+
+
+        document.getElementById('timereal').innerHTML = h + ":" + m;
+        setTimeout(time, 500);
+    }
+
+    function clockbr(){
 
         dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
         monName = new Array ("janeiro", "fevereiro", "março", "abril", "Maio", "junho", "agosto", "outubro", "novembro", "dezembro")
 
-        var split = new Date().toString().match(/([A-Z]+[\+-][0-9]+.*)/)[1]
-        var timeZoneFormatted = split[split.length - 2] + " " + split[split.length - 1];
-        console.log(timeZoneFormatted)
 
 
-        //now = new Date
-        //let x = (dayName[now.getDay() ] + ", " + monName[now.getMonth()] + " " + now.getDate () + ", " + now.getFullYear())
+        now = new Date
+        let x = (dayName[now.getDay() ] + ", " + monName[now.getMonth()] + " " + now.getDate () + ", " + now.getFullYear())
 
-    document.getElementById("demo").innerHTML = x
+    document.getElementById("clock").innerHTML = x
 
-    setTimeout(clock, 1000);
+    setTimeout(clockbr, 1000);
 
     }
 
-    clock();
+    function clockall(){
+
+        dayName = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+        monName = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+
+
+
+        now = new Date
+        let x = (dayName[now.getDay() ] + ", " + monName[now.getMonth()] + " " + now.getDate () + ", " + now.getFullYear())
+
+    document.getElementById("clock").innerHTML = x
+
+    setTimeout(clockall, 1000)
+
+    }
+
+    if(navigator.language == "pt" || navigator.language == "pt-br" || navigator.language == "pt-BR" || navigator.language == "PT-BR"){
+
+        clockbr()
+
+    }else{
+
+        clockall()
+    }
+
+    time()
+
 }
 
+// ------ //
+ 
+function myFunction() {
+
+    var video = document.getElementById("myVideo");    
+
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+}
