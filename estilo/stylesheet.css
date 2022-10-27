@@ -1,27 +1,76 @@
-#config{
-
-    display: flex;
-    background: rgba(0, 0, 0, 0.5);
-    width: 150px;
-    height: 50px;
-    border: 1px;
+body, html {
+    min-height: 100vh;
+    background-image: url("/fundos/0.jpg"); /* MUDAR PARA 0 */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0px;
     padding: 0px;
-    border-radius: 10px;
+  }
+
+center, footer, header{
+    margin: 1vh;
+    position: fixed;
+
+} 
+
+/* ------------------------------------ DON'T JUDGE ME------------------------------------ */
+
+@media all and (max-width: 1500px)  {  p  { font-size:0.8rem;  } h1  { font-size:1rem;  } h2  { font-size:0.8rem;  }}
+@media all and (max-width: 1400px)  {  p  { font-size:0.75rem;  } h1  { font-size:0.95rem;  } h2  { font-size:0.75rem;  }}
+@media all and (max-width: 1300px)  {  p  { font-size:0.7rem;  } h1  { font-size:0.9rem;  } h2  { font-size:0.7rem;  }}
+@media all and (max-width: 1200px)  {  p  { font-size:0.65rem;  } h1  { font-size:0.85rem;  } h2  { font-size:0.65rem;  }}
+@media all and (max-width: 1100px)  {  p  { font-size:0.6rem;  } h1  { font-size:0.8rem;  } h2  { font-size:0.6rem;  }}
+@media all and (max-width: 1000px)  {  p  { font-size:0.55rem;  } h1  { font-size:0.75rem;  } h2  { font-size:0.55rem;  }}
+@media all and (max-width: 900px)  {  p  { font-size:0.5rem;  } h1  { font-size:0.7rem;  } h2  { font-size:0.5rem;  }}
+@media all and (max-width: 800px)  {  p  { font-size:0.45rem;  } h1  { font-size:0.65rem;  } h2  { font-size:0.45rem;  }}
+@media all and (max-width: 700px)  {  p  { font-size:0.4rem;  }  h1  { font-size:0.6rem;  } h2  { font-size:0.4rem;  }}
+@media all and (max-width: 600px)  {  p  { font-size:0.35rem;  } h1  { font-size:0.55rem;  } h2  { font-size:0.35rem;  }}
+@media all and (max-width: 500px)  {  p  { font-size:0.3rem;  } h1  { font-size:0.5rem;  } h2  { font-size:0.3rem;  }}
+@media all and (max-width: 400px)  {  p  { font-size:0.25rem;  } h1  { font-size:0.45rem;  } h2  { font-size:0.25rem;  }}
+@media all and (max-width: 300px)  {  p  { font-size:0.2rem;  } h1  { font-size:0.4rem;  } h2  { font-size:0.2rem;  }}
+
+/* ------------------------------------  
+THEN I ADD A FOR LOOP------------------------------------ */
+
+#config { /* PLAY E PAUSE */
+    display: flex;
+    background: rgba(0, 0, 0, 0.1);
+    max-width: 30vw;
+    max-height: 15vh;
+    border: 1vw;
+    padding: 0px;
+    border-radius: 15px;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
-    position: absolute;
-    
-
+    position: fixed;
+    overflow: hidden;
 }
 
-#iconsconfig{
+#bgbox { /*bg */
+    display: flex;
+    background: rgba(0, 0, 0, 0.1);
+    width: 10vw; 
+    height: 15vh;
+    border: 1px;
+    padding: 0px;
+    border-radius: 2vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 2vw;
+    overflow: hidden;
+    
+}
 
+#iconsconfig {
     width: 20%;
     height: auto;
-
 }
 
 
@@ -81,26 +130,278 @@ input:checked+.slider:before {
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 100%;
-    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.time{
-    position: relative;
-    font-size: 500%;
+.time {
+    position: fixed;
+    font-size: 12.5vh;
     font-variant: normal;
     font-family: monospace;
     font-weight: bold;
+    bottom: 0;
+    padding-bottom: 3%;
+}
+
+.clock {
+    position: fixed;
+    font-family: monospace;
+    font-size: 2.2vh;
+    font-weight: bold;
+    bottom: 0;
+    padding-bottom: 2%;
     
+}
+
+.boxes{
+    background: rgba(0, 0, 0, 0.5);
 
 
 }
 
-.clock{
-    position: relative;
+#imagemmini{
+
+    width: 7vw;
+    height: 14vh;
+    border-radius: 1vw;
+ 
+}
+
+.btbgback{
+
+    background: transparent;
+    border: none;
+    height: 15vh;
+    width: 2vmax;
+
+}
+
+.btbgnext{
+
+    background: transparent;
+    border: none;
+    height: 15vh;
+    width: 2vmax;
+    padding-right: 0px;
+
+}
+
+.btbgback:hover{
+
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+
+}
+
+.btbgnext:hover{
+
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+
+}
+
+#btimg{
+    max-width: 1vw;
+    max-height: 1vh;
+
+
+}
+
+#trocaimgback{
+
+    border-radius: 1vw 0px 0px 1vw;
+    padding-left: 0px;
+    padding-right: 0px;
+
+
+}
+
+#trocaimgnext{
+
+    border-radius: 0px 1vw 1vw 0px;
+
+}
+
+/* ------------------------------------ CENTER BOX ------------------------------------ */
+
+
+#boxgrande{
+
+    background: rgba(0, 0, 0, 0.1);
+    width: 30vw;
+    height: 80vh;
+    border-radius: 2vh;
+    padding: 10px;
+    position: fixed;
+    left: 35vw;
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: space-around space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+    bottom: 10vh;
+
+
+
+
+}
+
+#profile{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+
+}
+
+#ajustprofile{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+
+}
+
+#imageperfil{
+
+    width: 10vh;
+    height: 10vh;
+    border-radius: 10vh;
+    background: rgba(0, 0, 0, 0.1);
+    
+
+}
+
+p{
+    margin: 0px;
+    font-variant: normal;
     font-family: monospace;
-    font-size: 100%;
     font-weight: bold;
 
+
+}
+
+
+
+#divisor{
+
+    width: 28vw;
+    height: 1vh;
+    border-radius: 1vh;
+    background: rgba(0, 0, 0, 0.1);
+    padding-left: 1.5vw;
+
+
+}
+
+#aboutmeh1{
+
+    text-align: left;
+    padding-left: 2vh;
+    font-variant: normal;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 3vh;
+
+}
+
+#aboutmep{
+    margin: 0px;
+    text-align: left;
+    padding-left: 1.5vw;
+    font-variant: normal;
+    font-family: monospace;
+    font-weight: bold;
+
+}
+
+#links{
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-top: 12px;
+
+
+}
+
+
+
+#boximglinks{
+
+    width: 5vmin;
+    height: 5vmin;
+    background: transparent;
+
+
+
+}
+
+#linksh2{
+
+    font-variant: normal;
+    font-family: monospace;
+    font-weight: bold;
+    padding-left: 20px;
+    word-break: break-word;
+    
+
+}
+
+.boxeslinks{
+
+    width: 27vw;
+    height: 8vh;
+    border-radius: 1vh;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    padding-left: 0px;
+    margin: 1vh;
+
+}
+
+.buttonlink{
+
+    background-color: transparent;
+    border-radius: 1vh;
+    border: none;
+    z-index:1;
+    width: 27vw;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+}
+
+.buttonlink:hover{
+
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#myInput{
+
+    display: none;
 
 }

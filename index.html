@@ -12,34 +12,96 @@
     <script src="/js/script.js""></script>
 
 </head>
-<body>
-  <!-- The video -->
-  <video autoplay muted loop id="myVideo">
-    <source src="/bg.mov" type="video/mp4">
-  </video>
-  
-  
-  
-  
-  <center>
-  
+<body id="bg">
+
+
+  <header>
+
+    <div id="bgbox">
+        <button id="trocaimgback" class="btbgback" onclick="changeBackgroundImageback()"><img id="btimg" src="img/back.png" alt="back"></button>
+
+
+          <img id="imagemmini" src="fundos/0.jpg" alt="imagem">
+
+        <button id="trocaimgnext" class="btbgnext" onclick="changeBackgroundImagenext()"><img id="btimg" src="img/next.png" alt="back"></button>
+
+    </div>
+
+
+    <br><br><br><br><br><br>
+<!-- 
     <div id="config">
       <img id="iconsconfig" src="/img/play.png" alt="play">
   
       <label class="switch">
-        <input id="myBtn" onclick="myFunction()" type="checkbox">
+        <input id="myBtn" onclick="audio()" type="checkbox">
         <span class="slider round"></span>
       </label>
   
       <img id="iconsconfig" src="/img/pause.png" alt="pause">
     </div>
+-->
+
+  </header>
   
+  
+  <center>
+
+
+      <div id="boxgrande">
+        <div id="profile">
+          <div id="imagebox">
+              <img id="imageperfil" src="img/perfil.jpg" alt="perfil">
+          </div>
+          <div id="ajustprofile">
+            <p>Patrick Stegaribe de Almeida</p>
+            <p>18yt</p>
+            <p>Brazil</p>
+          </div>
+        </div>
+        <br>
+        <div id="divisor"></div>
+        <div id="aboutme">
+          <h1 id="aboutmeh1">About me</h1>
+          <p id="aboutmep">I Am a programmer beginning a college course Software Engineer in Brazil, i programming since 2017, i like programming and play videogames.</p>
+        </div>
+        <br>
+        <div id="divisor"></div>
+        <div id="links">
+          <div id="linksflex">
+            <div id="email" class="boxeslinks">
+              <input type="text" value="patrickstegaribe@gmail.com" id="myInput">
+              <button id="botaocopy" class="buttonlink" onclick="copy()"><div id="boximglinks"><img id="boximglinks" src="/iconslinks/gmail.png" alt=""></div><h2 id="linksh2">patrickstegaribe@gmail.com</h2></button>
+            </div>
+          
+            <div id="instagram" class="boxeslinks">
+              <button class="buttonlink" onclick="openInstagram()" type="button"><div id="boximglinks"><img id="boximglinks" src="/iconslinks/instagram.png" alt=""></div><h2 id="linksh2">@httppatr_</h2></button>
+            </div>
+         
+            <div id="github" class="boxeslinks">
+              <button class="buttonlink" onclick="openGithub()" type="button"><div id="boximglinks"><img id="boximglinks" src="/iconslinks/github.png" alt=""></div><h2 id="linksh2">Zanecruise</h2></button>
+            </div>
+       
+            <div id="linkedin" class="boxeslinks">
+              <button class="buttonlink" onclick="openLinkedin()" type="button"><div id="boximglinks"><img id="boximglinks" src="/iconslinks/linkedin.png" alt=""></div><h2 id="linksh2">Patrick Stegaribe de Almeida</h2></button>
+            </div>
+       
+            <div id="road" class="boxeslinks">
+              <button class="buttonlink" onclick="openRoad()" type="button"><div id="boximglinks"><img id="boximglinks" src="" alt=""></div><h2 id="linksh2">-----WAIT-----</h2></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          
+  </center>
+
+  <footer>
+
     <div id="timereal" class="time"></div>
     <div id="clock" class="clock""></div>
 
-  
-          
-  </center>
+  </footer>
   
       
 </body>

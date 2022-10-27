@@ -1,6 +1,12 @@
-console.log("Linkado")
+console.log("linked")
 
-window.onload = (event) => {
+window.onload = (event) => { // WHEN PAGE AS LOADED, EVENT AS EXECUTED
+
+
+    console.log("onload ready")
+
+    var image = document.getElementById("imagemmini");
+    image.src = "/fundos/1.jpg"
 
     function time() {
         today = new Date();
@@ -65,15 +71,106 @@ window.onload = (event) => {
 
 }
 
-// ------ //
- 
-function myFunction() {
+// SEPARATE FUNCTIONS //
 
-    var video = document.getElementById("myVideo");    
+/*
+function audio() {
 
-  if (video.paused) {
-    video.play();
+    var audio = document.getElementById("Audio");    
+
+  if (audio.paused) {
+    audio.play();
+    console.log("play")
   } else {
-    video.pause();
+    audio.pause();
+    console.log("pause")
   }
+}
+
+*/
+
+function copy() {
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+    
+  }
+
+function openInstagram() {
+    window.open('https://www.instagram.com/httppatr_/', '_blank')
+    
+}
+
+function openGithub() {
+    window.open('https://github.com/Zanecruise', '_blank')
+    
+}
+
+function openLinkedin() {
+    window.open('https://www.linkedin.com/in/🖥%EF%B8%8F-patrick-stegaribe-548408243/', '_blank')
+    
+}
+
+
+
+
+var imgcount = 1
+
+function changeBackgroundImagenext() {
+
+
+        document.body.style.backgroundImage = "url('/fundos/" + imgcount + ".jpg')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundAttachment = "fixed";
+        document.body.style.margin = "0"
+
+        x = "url('/fundos/" + imgcount + ".jpg')";
+
+        var image = document.getElementById("imagemmini");
+
+        imgcount++
+
+        if (imgcount > 3) {
+            imgcount = 0
+          
+        }
+
+        image.src = "/fundos/" + imgcount + ".jpg"
+
+        
+
+        console.log("trocado prox")
+        console.log(imgcount)
+
+}
+
+function changeBackgroundImageback() {
+
+
+    document.body.style.backgroundImage = "url('/fundos/" + imgcount + ".jpg')";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundAttachment = "fixed";
+    document.body.style.margin = "0"
+
+    x = "url('/fundos/" + imgcount + ".jpg')";
+
+    var image = document.getElementById("imagemmini");
+
+    imgcount++
+
+    if (imgcount > 3) {
+        imgcount = 0
+      
+    }
+
+    image.src = "/fundos/" + imgcount + ".jpg"
+
+
+
+    console.log("trocado volta")
+    console.log(imgcount)
+
 }
