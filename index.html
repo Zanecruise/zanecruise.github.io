@@ -15,7 +15,7 @@
 <body id="bg">
 
 
-  <header>
+<nav>
 
     <div id="bgbox">
         <button id="trocaimgback" class="btbgback" onclick="changeBackgroundImageback()"><img id="btimg" src="img/back.png" alt="back"></button>
@@ -28,8 +28,6 @@
     </div>
 
 
-    <br><br><br><br><br><br>
-<!-- 
     <div id="config">
       <img id="iconsconfig" src="/img/play.png" alt="play">
   
@@ -40,68 +38,96 @@
   
       <img id="iconsconfig" src="/img/pause.png" alt="pause">
     </div>
--->
 
-  </header>
-  
-  
-  <center>
-
-
-      <div id="boxgrande">
-        <div id="profile">
-          <div id="imagebox">
-              <img id="imageperfil" src="img/perfil.jpg" alt="perfil">
-          </div>
-          <div id="ajustprofile">
-            <p>Patrick Stegaribe de Almeida</p>
-            <p>18yt</p>
-            <p>Brazil</p>
-          </div>
-        </div>
-        <br>
-        <div id="divisor"></div>
-        <div id="aboutme">
-          <h1 id="aboutmeh1">About me</h1>
-          <p id="aboutmep">I Am a programmer beginning a college course Software Engineer in Brazil, i programming since 2017, i like programming and play videogames.</p>
-        </div>
-        <br>
-        <div id="divisor"></div>
-        <div id="links">
-          <div id="linksflex">
-            <div id="email" class="boxeslinks">
-              <input type="text" value="patrickstegaribe@gmail.com" id="myInput">
-              <button id="botaocopy" class="buttonlink" onclick="copy()"><div id="boximglinks"><img id="boximglinks" src="/iconslinks/gmail.png" alt=""></div><h2 id="linksh2">patrickstegaribe@gmail.com</h2></button>
-            </div>
-          
-            <div id="instagram" class="boxeslinks">
-              <button class="buttonlink" onclick="openInstagram()" type="button"><div id="boximglinks"><img id="boximglinks" src="/iconslinks/instagram.png" alt=""></div><h2 id="linksh2">@httppatr_</h2></button>
-            </div>
-         
-            <div id="github" class="boxeslinks">
-              <button class="buttonlink" onclick="openGithub()" type="button"><div id="boximglinks"><img id="boximglinks" src="/iconslinks/github.png" alt=""></div><h2 id="linksh2">Zanecruise</h2></button>
-            </div>
-       
-            <div id="linkedin" class="boxeslinks">
-              <button class="buttonlink" onclick="openLinkedin()" type="button"><div id="boximglinks"><img id="boximglinks" src="/iconslinks/linkedin.png" alt=""></div><h2 id="linksh2">Patrick Stegaribe de Almeida</h2></button>
-            </div>
-       
-            <div id="road" class="boxeslinks">
-              <button class="buttonlink" onclick="openRoad()" type="button"><div id="boximglinks"><img id="boximglinks" src="" alt=""></div><h2 id="linksh2">-----WAIT-----</h2></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-          
-  </center>
-
-  <footer>
 
     <div id="timereal" class="time"></div>
     <div id="clock" class="clock""></div>
 
-  </footer>
+</nav>
+
+
+  
+  
+  <center>
+
+    <div id="FLOW_PRINCIPAL"> <!-- OPEN FLOW PRINCIPAL -->
+      <div id="PRINCIPAL"> <!-- BOX PRINCIPAL OPEN -->
+        <div id="boxgrande">
+          <div id="profile">
+            <div id="imagebox">
+                <img id="imageperfil" src="img/perfil.jpg" alt="perfil">
+            </div>
+            <div id="ajustprofile">
+              <p>Patrick Stegaribe de Almeida</p>
+              <p>18yt</p>
+              <p>Brazil</p>
+            </div>
+          </div>
+          <br>
+          <div id="divisor"></div>
+          <div id="aboutme">
+            <h1 id="aboutmeh1">About me</h1>
+            <p id="aboutmep">I Am a programmer beginning a college course Software Engineer in Brazil, i programming since 2017, i like programming and play videogames.</p>
+          </div>
+          <br>
+          <div id="divisor"></div>
+          <div id="links">
+            <div id="linksflex">
+              <div id="email" class="boxeslinks">
+                <input type="text" value="patrickstegaribe@gmail.com" id="myInput">
+                <button id="botaocopy" class="buttonlink" onclick="copy()"><div id="boximglinks"><img id="boximglinks" src="/iconslinks/gmail.png" alt=""></div><h2 id="linksh2">patrickstegaribe@gmail.com</h2></button>
+              </div>
+            
+              <div id="instagram" class="boxeslinks">
+                <button class="buttonlink" onclick="openInstagram()" type="button"><div id="boximglinks"><img id="boximglinks" src="/iconslinks/instagram.png" alt=""></div><h2 id="linksh2">@httppatr_</h2></button>
+              </div>
+          
+              <div id="github" class="boxeslinks">
+                <button class="buttonlink" onclick="openGithub()" type="button"><div id="boximglinks"><img id="boximglinks" src="/iconslinks/github.png" alt=""></div><h2 id="linksh2">Zanecruise</h2></button>
+              </div>
+        
+              <div id="linkedin" class="boxeslinks">
+                <button class="buttonlink" onclick="openLinkedin()" type="button"><div id="boximglinks"><img id="boximglinks" src="/iconslinks/linkedin.png" alt=""></div><h2 id="linksh2">Patrick Stegaribe de Almeida</h2></button>
+              </div>
+        
+              <div id="road" class="boxeslinks">
+                <button id="road_button" class="buttonlink" onclick="openRoad()" type="button"><div id="boximglinks"><img id="boximglinks" src="" alt=""></div><h2 id="linksh2">-----WAIT-----</h2></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- BOX PRINCIPAL CLOSE -->
+        
+      <!-- TIME LINE -->
+        
+      <div id="BOXTIME"> <!-- BOX TIME OPEN-->
+        <div id="boxtimeteste"> <!-- BOX -->
+          <div id="boxtimetestebaixo"> <!-- FLEX DOWN -->
+              <h1 id="tituloboxtime">Nome</h1>
+              <p id="paragrafoboxtime">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam culpa mollitia illum id qui odit fuga, pariatur perferendis voluptatem deserunt nulla ad est eos, laborum alias sunt! Cumque, voluptates dolores.</p>
+                  <br>
+          <div id="flex_baixoagrupar">  
+              <div id="flex_boxtimecategoria"> <!-- FLEX RIGHT -->
+                  <div id="boxtimecategoria">Java</div>
+                  <div id="boxtimecategoria">Python</div>
+                  <div id="boxtimecategoria">code</div>
+              </div>
+          </div>   
+              <br>
+          </div> <!-- FLEX RIGHT -->
+              <div id="baixoflexbox">
+                  <img  id="imglogotimeline" src="/iconslinks/github.png" alt="LOGO"> 
+                  <div id="flex_boxtimedata"> <!-- FLEX RIGHT -->
+                      <h2>2022</h2>   
+                  </div>
+              </div> <!-- FLEX DOWN -->
+        </div> <!-- BOX -->
+      </div> <!-- BOX TIME CLOSE-->
+    </div> <!-- CLOSE FLOW PRINCIPAL -->
+          
+  </center>
+
+
   
       
 </body>

@@ -112,6 +112,46 @@ function openLinkedin() {
     
 }
 
+var press = 0
+
+function openRoad() {
+
+    let box_change = document.getElementById("BOXTIME")
+    let road_button_js = document.getElementById("road_button")
+
+
+
+    if (press == 0) {
+
+        document.getElementById("BOXTIME").style.display = "inline";
+
+        box_change.addEventListener('open', () => box_change.style.opacity = '1'); //MUDAR ISSO
+
+        press++
+
+        
+
+        
+    }else{
+
+
+        document.getElementById("BOXTIME").style.display = "none";
+        box_change.style.opacity = '0' // MUDAR ISSO
+
+        
+
+
+
+        press--
+
+    }
+        
+
+
+    
+
+
+}
 
 
 

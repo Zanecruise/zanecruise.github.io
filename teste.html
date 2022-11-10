@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+          <!-- TIME LINE -->
+
+    <div id="boxtimeteste"> <!-- BOX -->
+        <div id="boxtimetestebaixo"> <!-- FLEX DOWN -->
+            <h1 id="tituloboxtime">Nome</h1>
+            <p id="paragrafoboxtime">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam culpa mollitia illum id qui odit fuga, pariatur perferendis voluptatem deserunt nulla ad est eos, laborum alias sunt! Cumque, voluptates dolores.</p>
+                <br>
+        <div id="flex_baixoagrupar">  
+            <div id="flex_boxtimecategoria"> <!-- FLEX RIGHT -->
+                <div id="boxtimecategoria">Java</div>
+                <div id="boxtimecategoria">Python</div>
+                <div id="boxtimecategoria">code</div>
+            </div>
+        </div>   
+            <br>
+        </div> <!-- FLEX RIGHT -->
+            <div id="baixoflexbox">
+                <img  id="imglogotimeline" src="../zanecruise.github.io/iconslinks/github.png" alt="LOGO"> 
+                <div id="flex_boxtimedata"> <!-- FLEX RIGHT -->
+                    <h2>2022</h2>   
+                </div>
+        </div> <!-- FLEX DOWN -->
+    </div> <!-- BOX -->
+
+    <p>Some text before<p>
+    <div id="target">Click to fade</div>
+    <p>Some text after</p>
+    
+    <script>
+
+        const target = document.getElementById("target");
+
+        target.addEventListener('click', () => target.style.opacity = '1');
+        // If you want to remove it from the page after the fadeout
+        //target.addEventListener('transitionend', () => target.remove());
+        target.addEventListener('click', () => target.style.opacity = '0');
+
+    </script>
+    
+    <style>
+
+        #target {
+            height: 100px;
+            background-color: red;
+            transition: opacity 1s;
+            opacity: 0;
+        }
+
+        #baixoflexbox{
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 1vmin;
+
+        }
+
+        #flex_baixoagrupar{
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+
+        #flex_boxtimedata{
+
+            text-align: right;
+            font-variant: normal;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 2vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-content: center;
+            align-items: center;
+
+        }
+
+        #tituloboxtime{
+
+            text-align: left;
+            padding-left: 2vh;
+            font-variant: normal;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 3vh;
+
+        }
+
+        #paragrafoboxtime{
+
+            margin: 0px;
+            text-align: left;
+            padding-left: 3vmin;
+            font-variant: normal;
+            font-family: monospace;
+            font-weight: bold;
+
+            
+        }
+
+        #boxtimeteste{
+        
+            background: rgba(0, 0, 0, 0.1);
+            width: 65vmin;
+            height: 25vmin;
+            border-radius: 2vh;
+            border: 1vmin;
+            padding: 1vmin;
+            margin: 1vmin;
+            display: flex;
+
+        
+        } 
+        
+        #boxtimecategoria{
+        
+            background: rgba(0, 0, 0, 0.1);
+            width: 10vmin; 
+            height: 3.5vmin;
+            border: 1px;
+            margin-left: 1vmin;
+            border-radius: 0.7vmin;
+            text-align: center;
+            padding-top: 1vmin;
+
+        
+        }
+        
+        #flex_boxtimecategoria{
+        
+          display: flex;
+          padding-left: 1vmin;
+        
+        }
+        
+        #boxtimetestebaixo{
+        
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: stretch;
+            align-items: flex-start;
+            justify-content: space-around;
+        
+        }
+        
+        #imglogotimeline{
+
+            max-height: 10vmin;
+            max-width: 10vmin;
+
+        }
+        
+        </style>
+
+</body>
+</html>
