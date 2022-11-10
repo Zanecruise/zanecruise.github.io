@@ -227,11 +227,10 @@ input:checked+.slider:before {
 #boxgrande{
 
     background: rgba(0, 0, 0, 0.1);
-    width: 60vmin;
+    width: 28vw;
     height: 80vh;
     border-radius: 2vh;
-    padding: 10px;
-    left: 35vw;
+    padding: 1vmin;
     display: flex;
     flex-flow: column nowrap;
     place-content: space-around space-evenly;
@@ -240,7 +239,7 @@ input:checked+.slider:before {
     align-content: stretch;
     justify-content: flex-start;
     align-items: stretch;
-    bottom: 10vh;
+
 
 
 
@@ -308,10 +307,7 @@ p{
 
     text-align: left;
     padding-left: 2vh;
-    font-variant: normal;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 3vh;
+    
 
 }
 
@@ -414,8 +410,8 @@ p{
 #BOXTIME{
 
     opacity: 0;
-    display: none;
-    transition: opacity 1s;
+    display: inline;
+    transition: opacity 1.5s;
 
 }
 
@@ -485,12 +481,13 @@ p{
 #boxtimeteste{
 
     background: rgba(0, 0, 0, 0.1);
-    width: 60vmin;
-    height: 25vmin;
+    width: 28vw;
+    height: 25vh;
     border-radius: 2vh;
     border: 1vmin;
     padding: 1vmin;
     margin: 1vmin;
+
     display: flex;
 
 
@@ -535,6 +532,16 @@ p{
 
 }
 
+#roadcheack{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
 
 /* ---------------------------------- MEIO DA PAGINA ------------------------------------------ */
 
@@ -577,3 +584,15 @@ nav {
     nav {padding-top: 15px;}
     nav a {font-size: 18px;}
   }
+
+
+  h1{
+
+    font-variant: normal;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.5vw;
+
+
+  }
+

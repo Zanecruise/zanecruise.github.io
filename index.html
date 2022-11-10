@@ -12,7 +12,7 @@
     <script src="/js/script.js""></script>
 
 </head>
-<body id="bg">
+<body id="bg" onscroll="scrollpage()">
 
 
 <nav>
@@ -39,6 +39,7 @@
       <img id="iconsconfig" src="/img/pause.png" alt="pause">
     </div>
 
+    
 
     <div id="timereal" class="time"></div>
     <div id="clock" class="clock""></div>
@@ -48,7 +49,7 @@
 
   
   
-  <center>
+  <center">
 
     <div id="FLOW_PRINCIPAL"> <!-- OPEN FLOW PRINCIPAL -->
       <div id="PRINCIPAL"> <!-- BOX PRINCIPAL OPEN -->
@@ -90,8 +91,10 @@
                 <button class="buttonlink" onclick="openLinkedin()" type="button"><div id="boximglinks"><img id="boximglinks" src="/iconslinks/linkedin.png" alt=""></div><h2 id="linksh2">Patrick Stegaribe de Almeida</h2></button>
               </div>
         
-              <div id="road" class="boxeslinks">
-                <button id="road_button" class="buttonlink" onclick="openRoad()" type="button"><div id="boximglinks"><img id="boximglinks" src="" alt=""></div><h2 id="linksh2">-----WAIT-----</h2></button>
+              <div id="roadcheack">
+                <img id="boximglinks" src="/iconslinks/arrowdown.png" alt="">
+                <h1>My road map</h1>
+                <img id="boximglinks" src="/iconslinks/arrowdown.png" alt="">
               </div>
             </div>
           </div>
@@ -122,7 +125,31 @@
                   </div>
               </div> <!-- FLEX DOWN -->
         </div> <!-- BOX -->
-      </div> <!-- BOX TIME CLOSE-->
+      </div>
+      <div id="BOXTIME"> <!-- BOX TIME OPEN-->
+        <div id="boxtimeteste"> <!-- BOX -->
+          <div id="boxtimetestebaixo"> <!-- FLEX DOWN -->
+              <h1 id="tituloboxtime">Nome</h1>
+              <p id="paragrafoboxtime">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam culpa mollitia illum id qui odit fuga, pariatur perferendis voluptatem deserunt nulla ad est eos, laborum alias sunt! Cumque, voluptates dolores.</p>
+                  <br>
+          <div id="flex_baixoagrupar">  
+              <div id="flex_boxtimecategoria"> <!-- FLEX RIGHT -->
+                  <div id="boxtimecategoria">Java</div>
+                  <div id="boxtimecategoria">Python</div>
+                  <div id="boxtimecategoria">code</div>
+              </div>
+          </div>   
+              <br>
+          </div> <!-- FLEX RIGHT -->
+              <div id="baixoflexbox">
+                  <img  id="imglogotimeline" src="/iconslinks/github.png" alt="LOGO"> 
+                  <div id="flex_boxtimedata"> <!-- FLEX RIGHT -->
+                      <h2>2022</h2>   
+                  </div>
+              </div> <!-- FLEX DOWN -->
+        </div> <!-- BOX -->
+      </div>
+       <!-- BOX TIME CLOSE-->
     </div> <!-- CLOSE FLOW PRINCIPAL -->
           
   </center>

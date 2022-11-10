@@ -4,6 +4,9 @@ window.onload = (event) => { // WHEN PAGE AS LOADED, EVENT AS EXECUTED
 
 
     console.log("onload ready")
+    
+
+    // ---------------------- IMG BG -------------------------- //
 
     var image = document.getElementById("imagemmini");
     image.src = "/fundos/1.jpg"
@@ -26,6 +29,8 @@ window.onload = (event) => { // WHEN PAGE AS LOADED, EVENT AS EXECUTED
         setTimeout(time, 500);
     }
 
+    // ---------------------- CLOCK BR -------------------------- //
+
     function clockbr(){
 
         dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
@@ -41,6 +46,8 @@ window.onload = (event) => { // WHEN PAGE AS LOADED, EVENT AS EXECUTED
     setTimeout(clockbr, 1000);
 
     }
+
+    // ---------------------- CLOCK ALL -------------------------- //
 
     function clockall(){
 
@@ -89,7 +96,7 @@ function audio() {
 
 */
 
-function copy() {
+function copy() { // COPY EMAIL
     var copyText = document.getElementById("myInput");
     copyText.select();
     copyText.setSelectionRange(0, 99999);
@@ -97,21 +104,23 @@ function copy() {
     
   }
 
-function openInstagram() {
+function openInstagram() { // OPEN INSTAGRAM
     window.open('https://www.instagram.com/httppatr_/', '_blank')
     
 }
 
-function openGithub() {
+function openGithub() { // OPEN GITHUB
     window.open('https://github.com/Zanecruise', '_blank')
     
 }
 
-function openLinkedin() {
+function openLinkedin() { // OPEN LINKEDIN
     window.open('https://www.linkedin.com/in/🖥%EF%B8%8F-patrick-stegaribe-548408243/', '_blank')
     
 }
 
+// OPEN ROAD
+ 
 var press = 0
 
 function openRoad() {
@@ -153,11 +162,11 @@ function openRoad() {
 
 }
 
-
+// CHANGE BG
 
 var imgcount = 1
 
-function changeBackgroundImagenext() {
+function changeBackgroundImagenext() { // CHANGE BG NEXT
 
 
         document.body.style.backgroundImage = "url('/fundos/" + imgcount + ".jpg')";
@@ -186,7 +195,7 @@ function changeBackgroundImagenext() {
 
 }
 
-function changeBackgroundImageback() {
+function changeBackgroundImageback() { // CHANGE BG BEFORE
 
 
     document.body.style.backgroundImage = "url('/fundos/" + imgcount + ".jpg')";
@@ -212,5 +221,19 @@ function changeBackgroundImageback() {
 
     console.log("trocado volta")
     console.log(imgcount)
+
+}
+
+window.onscroll = scrollpage()
+
+function scrollpage(){
+
+    var porti = document.getElementById("BOXTIME")
+
+
+    
+
+    porti.style.opacity = '1' //MUDAR ISSO
+
 
 }
