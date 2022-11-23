@@ -8,8 +8,6 @@ window.onload = (event) => { // WHEN PAGE AS LOADED, EVENT AS EXECUTED
 
     // ---------------------- IMG BG -------------------------- //
 
-    var image = document.getElementById("imagemmini");
-    image.src = "/fundos/1.jpg"
 
     function time() {
         today = new Date();
@@ -80,21 +78,15 @@ window.onload = (event) => { // WHEN PAGE AS LOADED, EVENT AS EXECUTED
 
 // SEPARATE FUNCTIONS //
 
-/*
-function audio() {
 
-    var audio = document.getElementById("Audio");    
 
-  if (audio.paused) {
-    audio.play();
-    console.log("play")
-  } else {
-    audio.pause();
-    console.log("pause")
-  }
+function changebgcolor(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
 }
 
-*/
+
 
 function copy() { // COPY EMAIL
     var copyText = document.getElementById("myInput");
@@ -237,3 +229,6 @@ function scrollpage(){
 
 
 }
+
+// WHITE AND DARK MODE
+
