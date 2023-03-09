@@ -1,13 +1,10 @@
 console.log("linked")
 
 window.onload = (event) => { // WHEN PAGE AS LOADED, EVENT AS EXECUTED
-
-
+    
     console.log("onload ready")
     
-
     // ---------------------- IMG BG -------------------------- //
-
 
     function time() {
         today = new Date();
@@ -22,7 +19,6 @@ window.onload = (event) => { // WHEN PAGE AS LOADED, EVENT AS EXECUTED
             m = "0" + m
         }
 
-
         document.getElementById('timereal').innerHTML = h + ":" + m;
         setTimeout(time, 500);
     }
@@ -33,8 +29,6 @@ window.onload = (event) => { // WHEN PAGE AS LOADED, EVENT AS EXECUTED
 
         dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
         monName = new Array ("janeiro", "fevereiro", "março", "abril", "Maio", "junho", "agosto", "outubro", "novembro", "dezembro")
-
-
 
         now = new Date
         let x = (dayName[now.getDay() ] + ", " + monName[now.getMonth()] + " " + now.getDate () + ", " + now.getFullYear())
@@ -51,8 +45,6 @@ window.onload = (event) => { // WHEN PAGE AS LOADED, EVENT AS EXECUTED
 
         dayName = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
         monName = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
-
-
 
         now = new Date
         let x = (dayName[now.getDay() ] + ", " + monName[now.getMonth()] + " " + now.getDate () + ", " + now.getFullYear())
@@ -78,15 +70,11 @@ window.onload = (event) => { // WHEN PAGE AS LOADED, EVENT AS EXECUTED
 
 // SEPARATE FUNCTIONS //
 
-
-
 function changebgcolor(){
     var element = document.body;
     element.classList.toggle("dark-mode");
 
 }
-
-
 
 function copy() { // COPY EMAIL
     var copyText = document.getElementById("myInput");
@@ -120,8 +108,6 @@ function openRoad() {
     let box_change = document.getElementById("BOXTIME")
     let road_button_js = document.getElementById("road_button")
 
-
-
     if (press == 0) {
 
         document.getElementById("BOXTIME").style.display = "inline";
@@ -130,28 +116,14 @@ function openRoad() {
 
         press++
 
-        
-
-        
     }else{
-
 
         document.getElementById("BOXTIME").style.display = "none";
         box_change.style.opacity = '0' // MUDAR ISSO
-
-        
-
-
-
         press--
 
     }
         
-
-
-    
-
-
 }
 
 // CHANGE BG
@@ -159,7 +131,6 @@ function openRoad() {
 var imgcount = 1
 
 function changeBackgroundImagenext() { // CHANGE BG NEXT
-
 
         document.body.style.backgroundImage = "url('/fundos/" + imgcount + ".jpg')";
         document.body.style.backgroundRepeat = "no-repeat";
@@ -189,7 +160,6 @@ function changeBackgroundImagenext() { // CHANGE BG NEXT
 
 function changeBackgroundImageback() { // CHANGE BG BEFORE
 
-
     document.body.style.backgroundImage = "url('/fundos/" + imgcount + ".jpg')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
@@ -209,8 +179,6 @@ function changeBackgroundImageback() { // CHANGE BG BEFORE
 
     image.src = "/fundos/" + imgcount + ".jpg"
 
-
-
     console.log("trocado volta")
     console.log(imgcount)
 
@@ -218,17 +186,16 @@ function changeBackgroundImageback() { // CHANGE BG BEFORE
 
 window.onscroll = scrollpage()
 
-function scrollpage(){
+    function scrollpage(){
 
-    var porti = document.getElementById("BOXTIME")
-
-
+        var porti = document.getElementById("BOXTIME")
     
+        porti.style.visibility = 'visible' //MUDAR ISSO
+    
+        console.log("rodo")
+    
+    }
 
-    porti.style.opacity = '1' //MUDAR ISSO
-
-
-}
 
 // WHITE AND DARK MODE
 
