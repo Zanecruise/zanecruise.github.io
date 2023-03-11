@@ -1,13 +1,9 @@
 #bg{
-
     background-image: url("/fundos/2.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
-
 }
-
-
 
 #config { /* PLAY E PAUSE */
     display: flex;
@@ -23,29 +19,29 @@
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
-
     overflow: hidden;
+
 }
-
-
 
 #iconsconfig {
     width: 20%;
     height: auto;
-}
 
+}
 
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
+
 }
 
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
+
 }
 
 .slider {
@@ -58,6 +54,7 @@
     background-color: rgba(0, 0, 0, 0.25);
     -webkit-transition: .4s;
     transition: .4s;
+
 }
 
 .slider:before {
@@ -70,22 +67,25 @@
     background-color: rgba(0, 0, 0, 0.75);
     -webkit-transition: .4s;
     transition: .4s;
+
 }
 
 input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
+
 }
 
 .slider.round {
     border-radius: 34px;
+
 }
 
 .slider.round:before {
     border-radius: 50%;
-}
 
+}
 
 .time {
 
@@ -95,34 +95,26 @@ input:checked+.slider:before {
     font-weight: bold;
     position: fixed;
     bottom: 3vmin
-
+    
 
 }
 
 .clock {
-
     font-family: monospace;
     font-size: 2.5vmin;
     position: fixed;
     bottom: 2vmin;
 
-
-
-    
 }
 
 .boxes{
     background: rgba(0, 0, 0, 0.5);
 
-
 }
-
 
 /* ------------------------------------ CENTER BOX ------------------------------------ */
 
-
 #boxgrande{
-
     border-color: black;
     width: 56vmin;
     height: 80vh;
@@ -138,14 +130,9 @@ input:checked+.slider:before {
     align-items: stretch;
     backdrop-filter: blur(10px);
 
-
-
-
-
 }
 
 #profile{
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -157,7 +144,6 @@ input:checked+.slider:before {
 }
 
 #ajustprofile{
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -170,13 +156,11 @@ input:checked+.slider:before {
 }
 
 #imageperfil{
-
     width: 10vmin;
     height: 10vmin;
     border-radius: 10vh;
     background: rgba(0, 0, 0, 0.1);
     
-
 }
 
 p{
@@ -186,13 +170,9 @@ p{
     font-weight: bold;
     font-size: 2vmin;
 
-
 }
 
-
-
 #divisor{
-
     width: 95%;
     min-height: 0.5%;
     border-radius: 1vmin;
@@ -203,7 +183,6 @@ p{
 }
 
 #aboutmeh1{
-
     text-align: left;
     padding-left: 2vh;
     
@@ -221,7 +200,6 @@ p{
 }
 
 #links{
-
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -230,34 +208,25 @@ p{
     justify-content: space-evenly;
     padding-top: 12px;
 
-
 }
 
-
-
 #boximglinks{
-
     width: 5vmin;
     height: 5vmin;
     background: transparent;
 
-
-
 }
 
 #linksh2{
-
     font-variant: normal;
     font-family: monospace;
     font-weight: bold;
     padding-left: 20px;
     font-size: 2.5vmin;
-    
 
 }
 
 .boxeslinks{
-
     width: 95%;
     height: 8vh;
     border-radius: 1vh;
@@ -275,7 +244,6 @@ p{
 }
 
 .buttonlink{
-
     background-color: transparent;
     border-radius: 1vh;
     border: none;
@@ -289,33 +257,27 @@ p{
     justify-content: flex-start;
     align-items: center;
     
-
 }
 
 .buttonlink:hover{
-
     background: rgba(0, 0, 0, 0.4);
+
 }
 
 #myInput{
-
     display: none;
 
 }
 
-
 /* ---------------------------------- TIME LINE ------------------------------------------ */
 
 #BOXTIME{
-
     display: inline;
     visibility: hidden;
     
-
 }
 
 #baixoflexbox{
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -327,7 +289,6 @@ p{
 }
 
 #flex_baixoagrupar{
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -335,11 +296,9 @@ p{
     justify-content: space-between;
     align-items: center;
 
-
 }
 
 #flex_boxtimedata{
-
     text-align: right;
     font-variant: normal;
     font-family: monospace;
@@ -355,7 +314,6 @@ p{
 }
 
 #tituloboxtime{
-
     text-align: left;
     padding-left: 2vh;
     font-variant: normal;
@@ -366,7 +324,6 @@ p{
 }
 
 #paragrafoboxtime{
-
     margin: 0px;
     text-align: left;
     padding-left: 3vmin;
@@ -374,13 +331,11 @@ p{
     font-family: monospace;
     font-weight: bold;
 
-    
 }
 
 #boxtimeteste{
-
     background: rgba(0, 0, 0, 0.1);
-    width: 28vw;
+    width: 56vmin;
     height: 25vh;
     border-radius: 2vh;
     border: 1vmin;
@@ -389,11 +344,9 @@ p{
     display: flex;
     backdrop-filter: blur(10px);
 
-
 } 
 
 #boxtimecategoria{
-
     background: rgba(0, 0, 0, 0.1);
     width: 10vmin; 
     height: 3.5vmin;
@@ -402,19 +355,17 @@ p{
     border-radius: 0.7vmin;
     text-align: center;
     padding-top: 1vmin;
-
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
 #flex_boxtimecategoria{
-
   display: flex;
   padding-left: 1vmin;
 
 }
 
 #boxtimetestebaixo{
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -425,14 +376,12 @@ p{
 }
 
 #imglogotimeline{
-
-    max-height: 10vmin;
-    max-width: 10vmin;
+    max-height: 8vmin;
+    max-width: 8vmin;
 
 }
 
 #roadcheack{
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -444,9 +393,7 @@ p{
 
 /* ---------------------------------- MEIO DA PAGINA ------------------------------------------ */
 
-
 #FLOW_PRINCIPAL{
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -457,7 +404,6 @@ p{
 }
 
 /* ---------------------------------- NAV BAR ------------------------------------------ */
-
 
 nav {
     height: 100%;
@@ -471,38 +417,33 @@ nav {
     padding-left: 1vw;
     margin: 1%;
 
-  }
+}
   
 
   
-  center {
+center{
     margin-left: 5vw;
    
 
-  }
+}
   
-  @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
     nav {padding-top: 15px;}
     nav a {font-size: 18px;}
-  }
+}
 
 
-  h1{
-
+h1{
     font-variant: normal;
     font-family: monospace;
     font-weight: bold;
     font-size: 1.5vw;
 
-
-  }
-
-
+}
 
 /* ---------------------------------- DARK THEME ------------------------------------------ */
 
 body{
-
     color: black;
     margin: 1%;
     overflow: overlay;
@@ -510,16 +451,11 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     
-
-  }
-
+}
   
-  
-
 /* ---------------------------------- WHITE THEME ------------------------------------------ */
 
 .dark-mode{
-
     color: 	rgb(196, 196, 196);
 
 }
@@ -535,11 +471,27 @@ body{
   background: rgb(0,0,0, 0.3); 
   border-radius: 2vh;
   
-
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(0,0,0, 0.5); 
     backdrop-filter: blur(15px);
     
+}
+
+.jav_ic{
+    font-size: 80%;
+
+
+}
+
+::selection { background: rgb(0,0,0, 0.3); ; color: #fff; } ::-moz-selection { background: rgb(0,0,0, 0.3); color: #fff; }
+
+
+
+footer{
+
+    height: 10vh;
+
+
 }
