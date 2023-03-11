@@ -117,7 +117,7 @@ input:checked+.slider:before {
 #boxgrande{
     border-color: black;
     width: 56vmin;
-    height: 80vh;
+    height: 80%;
     border-radius: 2vh;
     padding: 1vmin;
     display: flex;
@@ -319,7 +319,7 @@ p{
     font-variant: normal;
     font-family: monospace;
     font-weight: bold;
-    font-size: 3vh;
+    font-size: 1.2rem;
 
 }
 
@@ -492,6 +492,12 @@ body{
 footer{
 
     height: 10vh;
+
+
+}
+
+#ano_time{
+    font-size: 1.2rem;
 
 
 }
