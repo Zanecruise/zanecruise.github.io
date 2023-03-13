@@ -71,9 +71,9 @@
 }
 
 input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
 
 }
 
@@ -89,7 +89,7 @@ input:checked+.slider:before {
 
 .time {
 
-    font-size: 12.5vmin;
+    font-size: 12.5vmin; /* - 12.5 vmin - */
     font-variant: normal;
     font-family: monospace;
     font-weight: bold;
@@ -101,9 +101,10 @@ input:checked+.slider:before {
 
 .clock {
     font-family: monospace;
-    font-size: 2.5vmin;
+    font-size: 2.5vmin; /* - 2.5 vmin - */
     position: fixed;
     bottom: 2vmin;
+    padding-left: 2vmin;
 
 }
 
