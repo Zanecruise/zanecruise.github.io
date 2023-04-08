@@ -75,9 +75,9 @@
 }
 
 input:checked+.slider:before {
-    -webkit-transform: translateX(12px);
-    -ms-transform: translateX(12px);
-    transform: translateX(12px);
+    -webkit-transform: translateX(2.5vmin);
+    -ms-transform: translateX(2.5vmin);
+    transform: translateX(2.5vmin);
 
 }
 
@@ -512,5 +512,11 @@ footer{
 #ano_time{
     font-size: 3vmin;
 
+
+}
+
+a{
+
+    text-decoration: none;
 
 }
