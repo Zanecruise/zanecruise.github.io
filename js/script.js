@@ -99,10 +99,6 @@ function openLinkedin() { // OPEN LINKEDIN
     
 }
 
-function openLinkedin() { // OPEN LINKEDIN
-    window.open('', '_blank')
-    
-}
 
 // OPEN ROAD
  
