@@ -22,7 +22,7 @@ button {
     border-radius: 1vw;
     border: 0px;
     background-color: rgb(57, 202, 57);
-    padding: 1vw 10vw 1vw 10vw;
+    padding: 1vw 10vw;
     box-shadow: -1px 0 10px rgb(0, 0, 0, 0.3);
     position: fixed;
     top: 53vh;
@@ -56,10 +56,7 @@ button:hover {
 #config {
     /* PLAY E PAUSE */
     display: flex;
-    background: rgb(0, 0, 0, 0.2);
     opacity: 1;
-    padding: 1vw 10vw 1vw 10vw;
-    border: 1vw;
     padding: 0px;
     border-radius: 1vw;
     flex-direction: row;
