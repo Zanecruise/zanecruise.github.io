@@ -1,9 +1,5 @@
-console.log("linked")
-
 window.onload = (event) => { // WHEN PAGE AS LOADED, EVENT AS EXECUTED
-    
-    console.log("onload ready")
-    
+
     // ---------------------- IMG BG -------------------------- //
 
     function time() {
@@ -129,61 +125,61 @@ function openRoad() {
 
 // CHANGE BG
 
-var imgcount = 1
+// var imgcount = 1
 
-function changeBackgroundImagenext() { // CHANGE BG NEXT
+// function changeBackgroundImagenext() { // CHANGE BG NEXT
 
-        document.body.style.backgroundImage = "url('/fundos/" + imgcount + ".jpg')";
-        document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundSize = "cover";
-        document.body.style.backgroundAttachment = "fixed";
-        document.body.style.margin = "0"
+//         document.body.style.backgroundImage = "url('/fundos/" + imgcount + ".jpg')";
+//         document.body.style.backgroundRepeat = "no-repeat";
+//         document.body.style.backgroundSize = "cover";
+//         document.body.style.backgroundAttachment = "fixed";
+//         document.body.style.margin = "0"
 
-        x = "url('/fundos/" + imgcount + ".jpg')";
+//         x = "url('/fundos/" + imgcount + ".jpg')";
 
-        var image = document.getElementById("imagemmini");
+//         var image = document.getElementById("imagemmini");
 
-        imgcount++
+//         imgcount++
 
-        if (imgcount > 3) {
-            imgcount = 0
+//         if (imgcount > 3) {
+//             imgcount = 0
           
-        }
+//         }
 
-        image.src = "/fundos/" + imgcount + ".jpg"
+//         image.src = "/fundos/" + imgcount + ".jpg"
 
         
 
-        console.log("trocado prox")
-        console.log(imgcount)
+//         console.log("trocado prox")
+//         console.log(imgcount)
 
-}
+// }
 
-function changeBackgroundImageback() { // CHANGE BG BEFORE
+// function changeBackgroundImageback() { // CHANGE BG BEFORE
 
-    document.body.style.backgroundImage = "url('/fundos/" + imgcount + ".jpg')";
-    document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundAttachment = "fixed";
-    document.body.style.margin = "0"
+//     document.body.style.backgroundImage = "url('/fundos/" + imgcount + ".jpg')";
+//     document.body.style.backgroundRepeat = "no-repeat";
+//     document.body.style.backgroundSize = "cover";
+//     document.body.style.backgroundAttachment = "fixed";
+//     document.body.style.margin = "0"
 
-    x = "url('/fundos/" + imgcount + ".jpg')";
+//     x = "url('/fundos/" + imgcount + ".jpg')";
 
-    var image = document.getElementById("imagemmini");
+//     var image = document.getElementById("imagemmini");
 
-    imgcount++
+//     imgcount++
 
-    if (imgcount > 3) {
-        imgcount = 0
+//     if (imgcount > 3) {
+//         imgcount = 0
       
-    }
+//     }
 
-    image.src = "/fundos/" + imgcount + ".jpg"
+//     image.src = "/fundos/" + imgcount + ".jpg"
 
-    console.log("trocado volta")
-    console.log(imgcount)
+//     console.log("trocado volta")
+//     console.log(imgcount)
 
-}
+// }
 
 window.onscroll = scrollpage()
 
@@ -193,7 +189,6 @@ window.onscroll = scrollpage()
     
         porti.style.visibility = 'visible' //MUDAR ISSO
     
-        console.log("rodo")
     
     }
 

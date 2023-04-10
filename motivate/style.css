@@ -1,11 +1,11 @@
-body{
+body {
 
-    color: 	rgb(196, 196, 196);
+    color: rgb(196, 196, 196);
     background-color: rgb(31, 30, 30);
 
 }
 
-h1{
+h1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,40 +15,34 @@ h1{
     margin-right: 8vw;
     margin-bottom: 10vh;
 
- 
-
 }
 
-button{
+button {
 
     border-radius: 1vw;
     border: 0px;
     background-color: rgb(57, 202, 57);
     padding: 1vw 10vw 1vw 10vw;
-    box-shadow: -1px 0 10px rgb(0,0,0, 0.3);
+    box-shadow: -1px 0 10px rgb(0, 0, 0, 0.3);
     position: fixed;
     top: 53vh;
 
-    
-
 }
 
-button:hover{
+button:hover {
 
     background-color: rgb(24, 184, 24);
-    
 
 }
 
-.text{
+.text {
 
     font-family: monospace;
     font-size: 1rem;
 
-
 }
 
-#aling{
+#aling {
 
     display: flex;
     flex-direction: column;
@@ -57,16 +51,12 @@ button:hover{
     justify-content: center;
     align-items: center;
 
-
 }
 
-
-
-
-
-#config { /* PLAY E PAUSE */
+#config {
+    /* PLAY E PAUSE */
     display: flex;
-    background: rgb(0,0,0, 0.2);
+    background: rgb(0, 0, 0, 0.2);
     opacity: 1;
     padding: 1vw 10vw 1vw 10vw;
     border: 1vw;
@@ -79,7 +69,7 @@ button:hover{
     align-items: center;
     overflow: hidden;
     backdrop-filter: blur(10px);
-    box-shadow: -1px 0 10px rgb(0,0,0, 0.1);
+    box-shadow: -1px 0 10px rgb(0, 0, 0, 0.1);
     background: transparent;
     border: 1px solid rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -150,4 +140,3 @@ input:checked+.slider:before {
     border-radius: 50%;
 
 }
-
